@@ -1,1 +1,4 @@
-# Tweetmeme is a simple utility for previewing Tweets without having to click-through to Twitter
+Tweetmeme
+=========
+
+From the makers of the hit Chrome extension CrayBook comes Tweetmeme: A simpler and quicker way of seeing Tweets associated with posts on Techmeme.
