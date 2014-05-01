@@ -120,12 +120,14 @@ $(function () {
                 var $mention = $(this),
                     tweet_id = extractID($mention);
 
-                if (!$tweetmeme_container.html() || !$tweetmeme_container.hasClass(tweet_id)) {
-                    displayTweet($mention);
-                } else {
-                    removeTweet();
+                if (tweet_id) {
+                  if (!$tweetmeme_container.html() || !$tweetmeme_container.hasClass(tweet_id)) {
+                      displayTweet($mention);
+                  } else {
+                      removeTweet();
+                  }
+                  e.preventDefault();
                 }
-                e.preventDefault();
             }
         });
     });

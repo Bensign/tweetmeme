@@ -8,11 +8,11 @@
   file.  These files also must exist in 
   web_accessible_resources in the manifest.json file.
 
-  As a result of loading in jquery, load in tweetmeme
+  As a result of loading in jquery, load in Tweetmeme
 */
 
-var jq = document.createElement('script');
-var tm = document.createElement('script');
+var jq = document.createElement('script'),
+    tm = document.createElement('script');
 jq.src = chrome.extension.getURL('scripts/jquery-1.7.2.min.js');
 tm.src = chrome.extension.getURL('scripts/tweetmeme.js');
 
