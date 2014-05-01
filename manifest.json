@@ -1,12 +1,24 @@
 {
   "name": "Tweetmeme",
-  "version": "1.0",
-  "manifest_version": 2,
-  "description": "Makes it each to read the associated Tweets for Techmeme.",
+  "short_name": "Tweetmeme",
+  "version": "2.0",
+  "manifest_version": 3,
+  "default_locale" : "en",
+  "description": "Simpler Tweet consumption for Techmeme",
+
+
   "content_scripts": [
     {
       "matches": ["*://*.techmeme.com/*"],
-      "js": ["jquery-1.7.2.min.js", "tweetmeme.js"]
-    }
+      "js": ["jquery-1.7.2.min.js"],
+      "run_at" : "document_start"
+    },
+    {
+      "matches": ["*://*.techmeme.com/*"],
+      "js": ["tweetmeme.js"],
+      "run_at" : "document_end"
+    },
+
+
   ]
 }
