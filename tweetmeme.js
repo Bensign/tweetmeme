@@ -48,10 +48,10 @@ $(function () {
         var siblings_before = elem.prevAll(),
             siblings_after = elem.nextAll();
 
-        /*  Prevent Double-binds, gurl */
+        /*  Prevent Double-binds */
         unsetBindings();
 
-        /* Mother-fucking arrow-key navigation, bitches */
+        /* Arrow-key navigation */
         $(document).keydown(function (e) {
             switch (e.which) {
             case 37: //left
