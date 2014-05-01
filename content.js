@@ -13,8 +13,8 @@
 var jq = document.createElement('script'),
     tm = document.createElement('script');
 
-jq.src = chrome.extension.getURL('jquery-1.7.2.min.js');
-tm.src = chrome.extension.getURL('tweetmeme.js');
+jq.src = chrome.extension.getURL('scripts/jquery-1.7.2.min.js');
+tm.src = chrome.extension.getURL('scripts/tweetmeme.js');
 
 jq.onload = function() {
     this.parentNode.removeChild(this);
