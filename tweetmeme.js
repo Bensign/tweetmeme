@@ -39,7 +39,7 @@ $(function () {
     }
 
     /* 
-      When an overlay is show, lets add 
+      When an overlay is shown, lets add 
       key bindings for simple navigation 
     */
     function setBindings(elem) {
@@ -48,7 +48,7 @@ $(function () {
         var siblings_before = elem.prevAll(),
             siblings_after = elem.nextAll();
 
-        /*  Prevent Double-binds */
+        /*  Prevent double-binds */
         unsetBindings();
 
         /* Arrow-key navigation */
