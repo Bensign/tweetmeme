@@ -1,7 +1,7 @@
 {
   "name": "Tweetmeme",
   "short_name": "Tweetmeme",
-  "version": "3.0",
+  "version": "4.0",
   "manifest_version": 2,
   "default_locale" : "en",
   "description": "Simpler Tweet consumption for Techmeme",
