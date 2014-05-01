@@ -39,7 +39,7 @@ $(function () {
         return $('#tweetmeme');
     }
 
-        /* 
+    /* 
       When an overlay is show, lets add 
       key bindings for simple navigation 
     */
