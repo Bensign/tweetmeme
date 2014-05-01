@@ -5,17 +5,12 @@
   "manifest_version": 2,
   "default_locale" : "en",
   "description": "Simpler Tweet consumption for Techmeme",
-
+  "web_accessible_resources" : [ "scripts/tweetmeme.js", "scripts/jquery-1.7.2.min.js" ],
 
   "content_scripts": [
     {
       "matches": ["*://*.techmeme.com/*"],
-      "js": ["jquery-1.7.2.min.js"],
-      "run_at" : "document_start"
-    },
-    {
-      "matches": ["*://*.techmeme.com/*"],
-      "js": ["tweetmeme.js"],
+      "js": ["content.js"],
       "run_at" : "document_end"
     }
   ]
