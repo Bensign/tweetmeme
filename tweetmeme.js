@@ -1,7 +1,6 @@
 $(function () {
 
-    /* Prep the dialog for previewing */
-    /* For navigation between tweets, we'll want to store this for ease */
+    /* Setup dem vars */
     var MENTIONS = $('.bls a').toArray(),
         $tweetmeme_container = prepareDialog(),
         $current_mention;
@@ -9,7 +8,7 @@ $(function () {
     /* Just get the div in place for displaying tweets */
     function prepareDialog() {
 
-        // Assemble the nifty overlay
+        /* Assemble the nifty overlay */
         var overlay = document.createElement("div"),
             div = document.createElement("div");
 
@@ -30,7 +29,7 @@ $(function () {
         div.style.zIndex = 100;
         document.getElementById("tweetmeme-overlay").appendChild(div);
 
-        // Bind event for dismissal
+        /* Bind event for dismissal */
         $("#tweetmeme-overlay").on('click', function () {
             $(this).hide();
             unsetBindings();
@@ -77,7 +76,7 @@ $(function () {
         $(document).unbind('keydown');
     }
 
-    // Remove dat Tweet
+    /* Remove dat Tweet */
     function removeTweet() {
         if ($tweetmeme_container.html()) {
             $tweetmeme_container.attr('class').html('');
@@ -88,7 +87,7 @@ $(function () {
     /* Extract the unique Twitter ID from the link */
     function extractID(elem) {
         if (elem && elem.attr('href')) {
-            // This could probably be done better, but #yolo
+            /* This could probably be done better, but #yolo */
             return elem.attr('href').split("/").pop();
         }
         return false;
